@@ -56,14 +56,15 @@ M.config = function()
         -- col = 0,
         -- row = math.huge,
         -- border = "none",
-        padding = { 1, 2 }, -- extra window padding [top/bottom, right/left]
+        border = "single",
+        padding = { 2, 2, 2, 2 }, -- extra window padding [top/bottom, right/left]
         title = true,
         title_pos = "center",
         zindex = 1000,
         -- Additional vim.wo and vim.bo options
         bo = {},
         wo = {
-          -- winblend = 10, -- value between 0-100 0 for fully opaque and 100 for fully transparent
+          winblend = 0,
         },
       },
       layout = {
